@@ -1,18 +1,11 @@
-{% load static %}
+{% extends 'layout.html' %}
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superman Card</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'super.css' %}">
-
-    
-</head>
-<body>
+{% block title %}
+ superman page
+{% endblock %}
+{% block content %}
     <div class="card">
         <h1>Superman</h1>
         <p>Superman is a fictional superhero appearing in American comic books published by DC Comics. He was created by writer Jerry Siegel and artist Joe Shuster, and first appeared in Action Comics #1 in 1938. Superman is known for his superhuman strength, speed, flight, and other extraordinary abilities.</p>
     </div>
+{% endblock %}
