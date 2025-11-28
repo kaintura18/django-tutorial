@@ -24,4 +24,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('card/', views.card, name='card'),
     path('farty/', include('farty.urls')),
+
+    path("__reload__/", include("django_browser_reload.urls")),
 ]

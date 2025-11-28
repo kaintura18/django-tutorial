@@ -1,4 +1,5 @@
 {% load static %}
+{% load tailwind_tags %}
 
 
 <!DOCTYPE html>
@@ -13,14 +14,14 @@
 
     </title>
     <link rel="stylesheet" type="text/css" href="{% static 'super.css' %}">
+    {% tailwind_css %}
 
     
 </head>
 <body>
-  <nav
     {% block content %}
     write content here
     {% endblock %}
-  </nav>  
+    
 </body>
 </html>

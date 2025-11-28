@@ -4,8 +4,17 @@
  superman page
 {% endblock %}
 {% block content %}
-    <div class="card">
-        <h1>Superman</h1>
+    <div class='m-4 p-4 border-2 border-blue-500 rounded-lg bg-blue-100'>
+
+        <h1 class='text-3xl'>Superman</h1>
         <p>Superman is a fictional superhero appearing in American comic books published by DC Comics. He was created by writer Jerry Siegel and artist Joe Shuster, and first appeared in Action Comics #1 in 1938. Superman is known for his superhuman strength, speed, flight, and other extraordinary abilities.</p>
     </div>
+    <nav>
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'batman' %}">Batman</a> |
+    
+    </nav>  
+
+    <h1 class='bg-blue-200 text-white p-4 rounded'> This is superman page </h1>
+    
 {% endblock %}
