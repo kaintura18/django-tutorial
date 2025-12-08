@@ -1,11 +1,22 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-  batman
+  hero page
 {% endblock %}
 
 {% block content %}
     
-        <h1>Batman</h1>
-
+  <div class ="grid grid-cols-3 gap-4 m-4">
+   {% for hero in heroes %}
+    <div class="card p-4 border bg-gray-600 rounded-lg">
+      <img class="rounded " src="{{hero.image.url}}" alt="">
+      <h3 class="text-lg font-semibold p-2">{{hero.name}}</h3>
+      <a href={% url "hero-detail" hero.id %}>
+       <button class="bg-blue-500 text-blue-900 px-40 py-10 w-[100%] rounded hover:bg-blue-100">
+        {{hero.herotype}}-{{hero.id}}
+        </button>
+      </a>
+    </div>
+    {% endfor %} 
+  </div>
 {% endblock %}

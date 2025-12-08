@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  hero-detail page
+{% endblock %}
+
+{% block content %}
+    this is detail page for {{ hero.name }}
+    <h3>{{ hero.herotype }}</h3>
+    <h2>{{ hero.abilities }}</h2>
+  
+{% endblock %}
